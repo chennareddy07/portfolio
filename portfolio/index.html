@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chenna Reddy | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#myprojects">My Projects</a></li>
+      <li><a href="#skillandachievements">Skills & Achievements</a></li>
+      <li><a href="#contactme">Contact Me</a></li>
+    </ul>
+
+    <!-- 3D Toggle -->
+    <button id="toggle-3d" style="position:fixed;bottom:20px;right:20px;z-index:1000;">
+      3D On
+    </button>
+  </nav>
+</header>
+
+<!-- FULL PAGE 3D BACKGROUND -->
+<canvas id="bg-3d"></canvas>
+
+<main>
+
+  <!-- HERO -->
+  <section class="container" id="home">
+    <p class="one">Hi, I’m Chenna 👋</p>
+    <p class="two">Frontend Developer</p>
+    <p class="three">
+      I am a passionate web developer who enjoys turning ideas into interactive,
+      visually appealing, and accessible web experiences.
+    </p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="myprojects" id="myprojects">
+    <h2>My Projects</h2>
+    <p style="color:#555;">
+      A collection of things I've built with curiosity, creativity, and caffeine ☕
+    </p>
+  </section>
+
+  <div class="procontainer">
+    <div class="box">
+      <img src="https://img.freepik.com/free-vector/portfolio-management-previous-projects-samples-works-catalog-skills-presentation-successful-graphic-designer-web-developer-cartoon-character_335657-1586.jpg"
+           alt="Portfolio website">
+      <h4>Portfolio Website</h4>
+      <a href="#" class="visit-btn">Visit</a>
+    </div>
+
+    <div class="box">
+      <img src="https://static.vecteezy.com/system/resources/previews/004/229/128/original/calculator-icon-logo-free-vector.jpg"
+           alt="Calculator app">
+      <h4>Calculator App</h4>
+      <a href="#" class="visit-btn">Visit</a>
+    </div>
+
+    <div class="box">
+      <img src="https://thumbs.dreamstime.com/b/run-fitness-steps-tracker-app-icon-isolated-white-background-run-fitness-steps-tracker-app-icon-isolated-white-173197090.jpg"
+           alt="Step counter app">
+      <h4>Step Count App</h4>
+      <a href="#" class="visit-btn">Visit</a>
+    </div>
+
+    <div class="box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbXyZLY09PthIpgalMe_TyzVQkqlpuYHd7SA&s"
+           alt="Todo list app">
+      <h4>Todo List App</h4>
+      <a href="#" class="visit-btn">Visit</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- SKILLS -->
+<section class="skills" id="skillandachievements">
+  <h2>My Skills & Achievements</h2>
+  <p class="subtitle">Things I’ve mastered (or still mastering) along the way 🚀</p>
+
+  <div class="skills-grid">
+    <div class="card">
+      <h3>HTML</h3>
+      <p>Semantic, accessible markup.</p>
+    </div>
+    <div class="card">
+      <h3>CSS</h3>
+      <p>Responsive layouts & animations.</p>
+    </div>
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>Interactive & dynamic UI.</p>
+    </div>
+    <div class="card">
+      <h3>Git & GitHub</h3>
+      <p>Version control & collaboration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contactme">
+  <h2>Contact Me</h2>
+  <p>Have a question, suggestion, or opportunity? Let’s connect!</p>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email ID" required>
+    <input type="date" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<!-- THREE.JS -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
