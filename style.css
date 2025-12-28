@@ -1,6 +1,3 @@
-/* =======================
-   GLOBAL RESET & VARIABLES
-   ======================= */
 
 :root {
   --bg-main: #f8fafc;
@@ -32,11 +29,6 @@ body {
   color: var(--text-main);
   line-height: 1.6;
 }
-
-/* =======================
-   NAVBAR
-   ======================= */
-
 header {
   position: sticky;
   top: 0;
@@ -82,11 +74,6 @@ nav {
 .nav-links a:hover::after {
   width: 100%;
 }
-
-/* =======================
-   HERO / INTRO
-   ======================= */
-
 .container {
   min-height: 85vh;
   display: flex;
@@ -116,11 +103,6 @@ p.three {
   font-size: 1rem;
   color: var(--text-muted);
 }
-
-/* =======================
-   PROJECTS SECTION
-   ======================= */
-
 .myprojects {
   padding: 80px 8% 30px;
 }
@@ -178,11 +160,6 @@ p.three {
 .visit-btn:hover {
   background: var(--primary-dark);
 }
-
-/* =======================
-   SKILLS SECTION
-   ======================= */
-
 .skills {
   background: #f1f5f9;
   padding: 80px 8%;
@@ -230,11 +207,6 @@ p.three {
   font-size: 0.95rem;
   color: var(--text-muted);
 }
-
-/* =======================
-   CONTACT SECTION
-   ======================= */
-
 .contact {
   padding: 90px 8%;
   background:
@@ -294,11 +266,6 @@ p.three {
 .contact-form button:hover {
   background: #e0e7ff;
 }
-
-/* =======================
-   RESPONSIVE TWEAKS
-   ======================= */
-
 @media (max-width: 768px) {
   .nav-links {
     gap: 20px;
@@ -317,20 +284,16 @@ p.three {
     padding-right: 6%;
   }
 }
-/* =======================
-   3D BACKGROUND CANVAS
-   ======================= */
-
 #bg-3d {
   position: absolute;
   inset: 0;
-  z-index: -1;               /* stays behind content */
+  z-index: -1;              
   width: 100%;
   height: 100%;
-  pointer-events: none;      /* text remains clickable */
+  pointer-events: none;      
 }
 .container {
-  position: relative;   /* REQUIRED for canvas layering */
+  position: relative;   
   overflow: hidden;
 }
 #toggle-3d {
@@ -344,11 +307,12 @@ p.three {
   backdrop-filter: blur(6px);
 }
 #bg-3d {
-  position: fixed;        /* makes it global */
+  position: fixed;        
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;            /* stays behind everything */
-  pointer-events: none;  /* allows clicks through */
+  z-index: -1;            
+  pointer-events: none; 
 }
+
